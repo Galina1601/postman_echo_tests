@@ -3,7 +3,7 @@ import requests
 BASE_URL = "https://postman-echo.com"
 
 def test1_get_with_query_params():
-    params = {"name": "Galina", "age": 19}
+    params = {"name": "Олюша", "age": 19}
     response = requests.get(f"{BASE_URL}/get", params=params)
     assert response.status_code == 200
     data = response.json()
